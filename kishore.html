@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>signup</title>
+  <style>
+ 
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:RGB(147 197 247);
+  font-family: "lato", sans-serif;
+
+}
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  background-color:white;
+  width: 500px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  min-height:520px;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+
+
+::placeholder {
+  color: transparent;
+}
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.submitBtn {
+  
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 45px;
+ 
+
+}
+
+.submitBtn:hover {
+  background-color: #9867C5;
+  transform: translateY(-2px);
+}
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: purple;
+}
+.input:focus {
+  border: 2px solid purple;
+}
+.input:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input, label {
+  margin: 5px 5px;
+}
+
+.form-group {
+  margin: 30px auto;
+  width: 450px;
+}
+
+.form-control {
+  float: left;
+}
+
+#inputStreet {
+  width: 100% !important;
+}
+
+#inputCity {
+  width: 70% !important;
+}
+
+#inputState {
+  width: 70%;
+}
+
+#inputZip {
+  width: 70%;
+}
+
+#inputCounty {
+  width: 45%;
+}
+
+.address{
+   display:flex;
+}
+.textAlign{
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="signupFrm">
+        <form action="" class="form">
+          <h1 class="title">Sign up</h1>
+    
+            
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">Username</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">Email</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="tel" class="input" placeholder="a">
+            <label for="" class="label">Mobile Number</label>
+          </div>
+
+
+          <div class="inputContainer">
+            <input type="street" class="input" placeholder="a" id="inputStreet">
+            <label for="" class="label">street</label>
+          </div>
+          <div class="address">
+          <div class="inputContainer">
+            <input type="city" class="input" placeholder="a" id="inputCity">
+            <label for="" class="label">city</label>
+          </div>
+      
+       
+          <div class="inputContainer">
+            <input type="state" class="input" placeholder="a" id="inputState">
+            <label for="" class="label">state</label>
+          </div>
+          <div class="inputContainer">
+            <input type="zip" class="input" placeholder="a" id="inputZip">
+            <label for="" class="label">Pin code</label>
+          </div>
+        </div>
+          <div class="inputContainer">
+            <input type="country" class="input" placeholder="a">
+            <label for="" class="label">Country</label>
+          </div>
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">Company name</label>
+          </div>
+          <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">Occupation</label>
+          </div>
+          <div class="inputContainer">
+            <input type="number" class="input" placeholder="a">
+            <label for="" class="label">Years of Experience</label>
+          </div>
+
+
+        
+           
+    
+    
+    
+          <div class="textAlign">
+          <input type="submit" class="submitBtn" value="Sign up">
+        </div>
+        </form>
+      </div>
+</body>
+</html>
